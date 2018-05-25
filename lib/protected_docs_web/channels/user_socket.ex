@@ -5,8 +5,8 @@ defmodule ProtectedDocsWeb.UserSocket do
   # channel "room:*", ProtectedDocsWeb.RoomChannel
 
   ## Transports
-  transport :websocket, Phoenix.Transports.WebSocket
-  # transport :longpoll, Phoenix.Transports.LongPoll
+  transport :websocket, Phoenix.Transports.WebSocket,
+    timeout: 45_000
 
   # Socket params are passed from the client and can
   # be used to verify and authenticate a user. After
