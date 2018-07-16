@@ -1,5 +1,10 @@
 # ProtectedDocs
 
+TODO:
+
+- [ ] Submit example in: https://elixirforum.com/t/is-it-possible-to-secure-some-resources-served-by-plug-static/5797/3
+- [ ] Add full example or link to: https://github.com/phoenixframework/phoenix/issues/977
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
