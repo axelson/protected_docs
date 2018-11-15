@@ -38,7 +38,10 @@ defmodule ProtectedDocs.Mixfile do
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
-      {:oauth2, "~> 0.9"}
+      {:oauth2, "~> 0.9"},
+      {:httpoison, "~> 1.1"},
+      {:jason, "~> 1.0"},
+      {:dialyxir, git: "https://github.com/jeremyjh/dialyxir", branch: "master", runtime: false}
     ]
   end
 end

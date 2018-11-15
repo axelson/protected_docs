@@ -20,7 +20,7 @@ config :logger, :console,
 
 config :oauth2,
   serializers: %{
-    "application/vnd.api+json" => Poison
+    "application/json" => Jason
   }
 
 # Import environment specific config. This must remain at the bottom

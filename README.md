@@ -4,6 +4,7 @@ TODO:
 
 - [ ] Submit example in: https://elixirforum.com/t/is-it-possible-to-secure-some-resources-served-by-plug-static/5797/3
 - [ ] Add full example or link to: https://github.com/phoenixframework/phoenix/issues/977
+- [ ] build a way to run `mix doc` in a project and copy the docs into here. How to keep this always up to date with deploys?
 
 To start your Phoenix server:
 
