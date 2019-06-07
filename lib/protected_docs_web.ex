@@ -21,7 +21,7 @@ defmodule ProtectedDocsWeb do
     quote do
       use Phoenix.Controller, namespace: ProtectedDocsWeb
       import Plug.Conn
-      import ProtectedDocsWeb.Router.Helpers
+      alias ProtectedDocsWeb.Router.Helpers, as: Routes
       import ProtectedDocsWeb.Gettext
     end
   end
@@ -37,7 +37,7 @@ defmodule ProtectedDocsWeb do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import ProtectedDocsWeb.Router.Helpers
+      alias ProtectedDocsWeb.Router.Helpers, as: Routes
       import ProtectedDocsWeb.ErrorHelpers
       import ProtectedDocsWeb.Gettext
     end

@@ -1,7 +1,8 @@
 defmodule ProtectedDocsWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :protected_docs
 
-  socket "/socket", ProtectedDocsWeb.UserSocket
+  socket "/socket", ProtectedDocsWeb.UserSocket,
+    websocket: true
 
   # Serve at "/" the static files from "priv/static" directory.
   #
@@ -25,7 +26,7 @@ defmodule ProtectedDocsWeb.Endpoint do
   plug Plug.Parsers,
     parsers: [:urlencoded, :multipart, :json],
     pass: ["*/*"],
-    json_decoder: Poison
+    json_decoder: Jason
 
   plug Plug.MethodOverride
   plug Plug.Head
