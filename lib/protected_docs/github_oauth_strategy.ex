@@ -6,9 +6,9 @@ defmodule ProtectedDocs.GitHubOAuthStrategy do
   def client do
     OAuth2.Client.new([
       strategy: __MODULE__,
-      client_id: System.get_env("GITHUB_CLIENT_ID"),
-      client_secret: System.get_env("GITHUB_CLIENT_SECRET"),
-      redirect_uri: System.get_env("GITHUB_REDIRECT_URI") <> "/handle_login",
+      client_id: System.fetch_env!("GITHUB_CLIENT_ID"),
+      client_secret: System.fetch_env!("GITHUB_CLIENT_SECRET"),
+      redirect_uri: System.fetch_env!("GITHUB_REDIRECT_URI") <> "/handle_login",
       site: "https://api.github.com",
       authorize_url: "https://github.com/login/oauth/authorize",
       token_url: "https://github.com/login/oauth/access_token"
